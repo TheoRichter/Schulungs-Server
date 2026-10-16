@@ -34,7 +34,7 @@ Bitte merken Sie sich die IP des Installationsservers.
 
 ### Neuer Schulungsserver
 
-Erstellen eines LXC-Containers, neuen Schulungsserver bauen:
+Erstellen eines LXC-Containers, um den neuen Schulungsserver zubauen:
 
 ```bash
 ip a
