@@ -1,6 +1,6 @@
-# Installation der Installations-Quelle und des Schulungs-Server
+# Installation der Quelle und des Docker-Server
 
-## Installation-Quelle
+## Installation der Quelle
 
 ### Erstellen eines LXC-Containers: 
 
