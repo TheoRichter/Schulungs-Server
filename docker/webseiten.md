@@ -1,0 +1,1 @@
+![Spezifikationen](./graphics/login.png)

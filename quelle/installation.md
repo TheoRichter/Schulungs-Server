@@ -31,14 +31,3 @@ ip a
 ```
 Bitte merken Sie sich die IP des Installationsservers.
 
-
-### Schulungs-Server
-
-Erstellen eines LXC-Containers, um den neuen Schulungsserver zubauen:
-
-```bash
-ip a
-wget InstallationsserverIP/INSTALL.sh
-bash INSTALL.sh InstallationsserverIP
-```
-
