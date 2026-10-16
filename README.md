@@ -1,4 +1,4 @@
-# Schulungs-Server
+# Installationsquelle für den Schulungs-Server
 
 ## Download-Link
 
