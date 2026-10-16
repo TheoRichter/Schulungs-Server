@@ -35,3 +35,30 @@ bash INSTALL.sh DieInstallationsquellenIP
 ```
 
 ![Shell](./graphics/shell.png)
+
+Nach dem Drücken von **Enter** beginnt der Installationsvorgang.
+
+Nach einiger Zeit erscheint eine Text Eingabe zum Eintragen der IP des docker-servers:
+
+![ShellIP](./graphics/shellIP.png)
+
+Nach dem Drücken von **Enter** kommt die Eingabeaufforderung zum Festlegen der SchILD3-Version:
+
+![ShellSchILD3](./graphics/shellSchILD3.png)
+
+Danach erscheint mehre Eingabeaufforderungen: (bei dem Beispiel wähle ich 3 STACKs)
+
+![ShellSTACKs](./graphics/shellSTACKs.png)
+
+Nach der fertigen Installation muß der Arbeitsmodus des SVWS-Servers fest gelegt werden. Meine Auswahl ist der **dev** Modus.
+
+![ShellDev](./graphics/shellDev.png)
+
+Nach dem Drücken von **Enter** werden die DatenabnkSchemata Eingespielt.
+
+![ShellSchemata](./graphics/shellSchemata.png)
+
+Jetzt dauert das einige zeit und am Ende erscheint dieser Bildschirm.
+
+![ShellEnde](./graphics/shellEnde.png)
+
