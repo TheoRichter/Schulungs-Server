@@ -22,7 +22,7 @@ Nach der fertigen Installation habe ich noch die **eth1**-Schnittstelle mit der 
 
 ### Docker-Server
 
-Nach dem erstellendes LXC-Container wechsel wir auf die Text-Console (Shell) und melden uns als Benutzer **root** an.
+Nach dem erstellendes LXC-Container wechsel wir auf die Konsole oder Shell und melden uns als Benutzer **root** an.
 
 Dort geben wir untenstehenden Text ein:
 
@@ -34,3 +34,4 @@ wget DieInstallationsquellenIP/INSTALL.sh
 bash INSTALL.sh DieInstallationsquellenIP
 ```
 
+![Shell](./graphics/shell.png)
