@@ -1,6 +1,6 @@
 # Installation Installationsserver und Schulungsserver
 
-## Installationserver 
+## Installationserver
 
 ### Erstellen eines LXC-Containers: 
 
