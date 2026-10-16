@@ -1,6 +1,6 @@
-# Installation Installationsserver und Schulungsserver
+# Installation der Installations-Quelle und des Schulungs-Server
 
-## Installationserver
+## Installation-Quelle
 
 ### Erstellen eines LXC-Containers: 
 
@@ -32,7 +32,7 @@ ip a
 Bitte merken Sie sich die IP des Installationsservers.
 
 
-### Neuer Schulungsserver
+### Schulungs-Server
 
 Erstellen eines LXC-Containers, um den neuen Schulungsserver zubauen:
 
