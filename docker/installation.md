@@ -58,7 +58,7 @@ Nach dem Drücken von **Enter** werden die DatenabnkSchemata Eingespielt.
 
 ![ShellSchemata](./graphics/shellSchemata.png)
 
-Jetzt dauert das einige zeit und am Ende erscheint dieser Bildschirm.
+Jetzt dauert das einige Zeit und am Ende erscheint dieser Bildschirm.
 
 ![ShellEnde](./graphics/shellEnde.png)
 
