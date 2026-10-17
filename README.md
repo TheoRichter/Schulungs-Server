@@ -1,4 +1,4 @@
-# Installations-Quelle für den Docker-Server
+# Installations-Quelle und Installations-Anleitung für Docker-Server sowie die Dokumentation
 
 ## Download-Link
 
