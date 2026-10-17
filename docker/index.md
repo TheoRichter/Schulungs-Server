@@ -27,3 +27,18 @@ Die Anzeige ändert bei Stop auf ein rotes Aus.
 ### Zurücksetzen der Schulungs-Schemata
 
 Durch betätigen der grauen Schaltflächen weden die jeweiligen Schemata bei allen Containern neu eingespielt.
+
+### Links:
+
+[Startseite](/docker/index.md)
+
+[SVWS-Schemata-Update](/docker/index.md)
+
+[SVWS-Versions-Update](/docker/svws-versions-update.md)
+
+[Wenom-Versions-Update](/docker/wenom-versions-update.md)
+
+[Schild-NRW-3](/docker/schild3.md)
+
+[Status/Link](/docker/container-status.md)
+
