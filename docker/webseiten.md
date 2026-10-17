@@ -10,7 +10,7 @@ Im Browser die Startseit aufrufen mit der Eingabe https:// gefolgt von der IP de
 
 ![Nicht sicher](./graphics/login_nicht-sicher.png)
 
-Die Meldung **Nicht sicher** kann Ignoriert werden da der Docker-Server nur im Intranet betrieben wird.
+Die Meldung **Nicht sicher** kann ignoriert werden da der Docker-Server nur im Intranet betrieben wird.
 
 
 
