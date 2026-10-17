@@ -18,9 +18,9 @@ Die Meldung **Nicht sicher** kann ignoriert werden da der Docker-Server nur im I
 
 Nach eingabe des Benutzername und des Kennworts öffnet sich die Startseite.
 
-### Links:
-
 ![index](./graphics/index.png)
+
+### Links:
 
 [Startseite](/docker/index.md)
 
