@@ -16,7 +16,8 @@ Kennwort: **1tt....**
 
 Die Meldung **Nicht sicher** kann ignoriert werden da der Docker-Server nur im Intranet betrieben wird.
 
-## Die Startseite (index.php)
+Nach eingabe des Benutzername und des Kennworts öffnet sich die Startseite.
 
-nac
+![index](./graphics/index.png)
+
 
