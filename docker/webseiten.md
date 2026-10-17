@@ -20,4 +20,4 @@ Nach eingabe des Benutzername und des Kennworts öffnet sich die Startseite.
 
 ![index](./graphics/index.png)
 
-
+Weiter zu den Erklärungen zur [Startseite](/docker/index.md)

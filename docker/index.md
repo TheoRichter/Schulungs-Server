@@ -1,0 +1,29 @@
+# Erklärungen zur Startseite (index.php)
+
+## Die Schaltflächen
+
+Bei der ausgewählte Seite ist die Farbe Rot und an der ersten Position.
+
+![Schaltflaeche](./graphics/schaltflaeche.png)
+
+## Der Seiteninhalt von SVWS-Schemata-Update
+
+![index](./graphics/index.png)
+
+### Stausanzeige der Docker-Container.
+
+Hier wird der erste und der letzte Container angezeigt. 
+
+**STACK:**
+pc-01 und darunter der letzte pc.
+
+**SVWS-Status:**
+Mit Start oder Stop können alle Container gestartet oder Bendet werden.
+
+Die Anzeige ändert bei Start auf ein grünes An.
+
+Die Anzeige ändert bei Stop auf ein rotes Aus.
+
+### Zurücksetzen der Schulungs-Schemata
+
+Durch betätigen der grauen Schaltflächen weden die jeweiligen Schemata bei allen Containern neu eingespielt.
