@@ -2,7 +2,11 @@
 
 ## Aufrufen der Startseite im Browser
 
-Im Browser die Startseit aufrufen mit der Eingabe https:// gefolgt von der IP des Docker-Servers
+Im Browser die Startseit aufrufen mit der Eingabe https:// gefolgt von der IP des Docker-Servers.
+
+Benutzername: **fachberater**
+
+Kennwort: **1tt....**
 
 ![Spezifikationen](./graphics/login.png)
 
@@ -12,5 +16,7 @@ Im Browser die Startseit aufrufen mit der Eingabe https:// gefolgt von der IP de
 
 Die Meldung **Nicht sicher** kann ignoriert werden da der Docker-Server nur im Intranet betrieben wird.
 
+## Die Startseite (index.php)
 
+nac
 
