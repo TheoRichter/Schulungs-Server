@@ -16,7 +16,7 @@ Hie die geänderte Tabellenansicht.
 
 ## 3. Schritt
 
-Im 3. Schritt wird der SVWS-Server auf das neuste Release upgedatet.
+Im 3. Schritt wird der SVWS-Server auf das neuste Release gebracht.
 
 ### Links:
 
