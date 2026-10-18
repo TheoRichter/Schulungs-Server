@@ -10,6 +10,13 @@ Hie die geänderte Tabellenansicht.
 
 ![schulungen](./graphics/schulungen.png)
 
+## 2. Schritt
+
+![SVWSVersion](./graphics/svws-version.png)
+
+## 3. Schritt
+
+Im 3. Schritt wird der SVWS-Server auf das neuste Release upgedatet.
 
 ### Links:
 
