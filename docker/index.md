@@ -18,7 +18,10 @@ Hier wird der erste und der letzte Container angezeigt.
 pc-01 und darunter der letzte pc.
 
 **SVWS-Status:**
-Mit Start oder Stop können alle Container gestartet oder bendet werden.
+Mit Start oder Stop können alle SVWS-Container gestartet oder bendet werden.
+
+**WeNoM-Status:**
+Mit Start oder Stop können alle WebNotenManager-Container gestartet oder bendet werden.
 
 Die Anzeige ändert bei Start auf ein grünes An.
 
