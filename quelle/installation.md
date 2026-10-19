@@ -24,6 +24,7 @@ dpkg-reconfigure locales && dpkg-reconfigure tzdata
 
 ```bash
 cd /var/www/html
+rm index.html
 wget https://github.com/TheoRichter/Schulungs-Server/raw/refs/heads/main/downloads/SCHULUNGS-SERVER.zip
 unzip SCHULUNGS-SERVER.zip
 rm SCHULUNGS-SERVER.zip
