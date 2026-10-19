@@ -4,11 +4,11 @@
 
 Bei der ausgewählte Seite ist die Farbe Rot und an der ersten Position.
 
-![Schaltflaeche](/graphics/schaltflaeche.png)
+![Schaltflaeche](./graphics/schaltflaeche.png)
 
 ## Der Seiteninhalt von SVWS-Schemata-Update
 
-![index](/graphics/index.png)
+![index](./graphics/index.png)
 
 ### Stausanzeige der Docker-Container.
 
