@@ -30,5 +30,5 @@ unzip SCHULUNGS-SERVER.zip
 rm SCHULUNGS-SERVER.zip
 ip a
 ```
-Bitte merken Sie sich die IP des Installationsquelle.
+Bitte merken Sie sich die IP der Installationsquelle.
 
