@@ -6,10 +6,10 @@ https://github.com/TheoRichter/Schulungs-Server/raw/refs/heads/main/downloads/SC
 
 ## Installation der Quelle
 
-Hier die Anleitung zur [Installation](https://github.com/TheoRichter/Docker-Server-Dokumentation/quelle/installation.md). 
+Hier die Anleitung zur [Installation](/quelle/installation.md). 
 
 ## Installation des Docker-Server und Dokumentation
 
-Hier die Anleitung zur [Installation](https://github.com/TheoRichter/Docker-Server-Dokumentation/docker/installation.md). 
+Hier die Anleitung zur [Installation](/docker/installation.md). 
 
-Hier die [Dokumetation](https://github.com/TheoRichter/Docker-Server-Dokumentation/docker/webseiten.md) zum Docker.
+Hier die [Dokumetation](/docker/webseiten.md) zum Docker.
