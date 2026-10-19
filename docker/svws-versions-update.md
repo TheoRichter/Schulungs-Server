@@ -12,7 +12,7 @@ Hie die geänderte Tabellenansicht.
 
 ## 2. Schritt
 
-Im 3. Schritt wird der SVWS-Server auf das neuste Release gebracht.
+Update auf das neuste Release des SVWS-Server durchführen.
 
 ### Links:
 
