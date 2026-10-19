@@ -4,14 +4,14 @@
 
 ### Erstellen eines LXC-Containers: 
 
-**1 CPU, 512MB RAM, 512 MB SWAP und 1GB Speicher**
+**1 CPU, 512MB RAM, 512 MB SWAP und 2GB Speicher**
 
 ![Spezifikationen](./graphics/specs.png)
 
 ### System Updaten und den Apache2 Webserver installieren:
 
 ```bash
-apt update && apt upgrade -y && apt install –y apache2 mc ssh zip
+apt update && apt upgrade -y && apt install apache2 mc ssh zip -y
 ```
 
 Optional: Einstellen des deutschen Tastatur Layouts und der Zeitzone Europa/Berlin
