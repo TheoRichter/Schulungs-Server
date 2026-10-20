@@ -13,3 +13,7 @@ Hier die Anleitung zur [Installation](/quelle/installation.md).
 Hier die Anleitung zur [Installation](/docker/installation.md). 
 
 Hier die [Dokumetation](/docker/webseiten.md) zum Docker.
+
+## Windows PCs Netlaufwerke
+
+Hier die Anleitung zum Einbinden der [Netzlaufwerke](/windows/netzlaufwerke.md). 
