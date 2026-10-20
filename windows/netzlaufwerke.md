@@ -10,9 +10,10 @@ Für die Schulungs-PCs bietet es sich an zwei Verknupfungen auf dem Desktop zu P
 
 ### Hinweis
 
-Es kann sein das beim Einbinden der Netzlaufwerke nach einem Benutzername und Kennwort gefragt wird, das ist beides mal **smbuser**
+```
+Es kann sein das beim Einbinden der Netzlaufwerke nach einem Benutzername und Kennwort gefragt wird, das ist beides mal smbuser
+````
 
----
 
 Um einen reibungslosen Betrieb zu gewährleisten müßen zwei Netzlaufwerke eingebunden werde.
 
