@@ -4,12 +4,13 @@ Beim öfnen der Sete erscheint eine Tabbel mit allen installierten Docker-Contai
 
 In der Spalte *STACK* werden die jeweiligen Bezeichnunge der Container aufgelistet.
 
-In der Spalete *SVWS-Tools* befindet sich die jeweilge Schaltfläche zu den Anwendungen.
+In der Spalte *SVWS-Tools* befindet sich die Schaltfläche *Anwendungen* mit dieser können die hinterlegten Tools für den jeweiligen Container in einem neuen Browserfenster angezeigt werden.
 
-Ind den Spalten *SVWS-, MariaDB-, 
+![Anwendungen](./graphics/anwendungen.png)
 
+In den Spalten *SVWS-, MariaDB und WeNoM-Status* können die jeweiligen Container gestartet oder gestoppt werden. Als Zustandaanzeiger dienen ein grünes **An** für gestartet und ein rotes **Aus** für gestoppt.
 
-![status](./graphics/status.png)
+![Status](./graphics/status.png)
 
 
 ### Links:
