@@ -1,6 +1,8 @@
 # Status und Link
 
-Beim öfnen der Sete erscheint eine Tabbel mit allen installierten Docker-Containern aufgelistet.
+Beim öfnen der Seite erscheint eine Tabbel mit allen installierten Docker-Containern aufgelistet.
+
+![Status](./graphics/status.png)
 
 In der Spalte *STACK* werden die jeweiligen Bezeichnunge der Container aufgelistet.
 
@@ -9,9 +11,6 @@ In der Spalte *SVWS-Tools* befindet sich die Schaltfläche *Anwendungen* mit die
 ![Anwendungen](./graphics/anwendungen.png)
 
 In den Spalten *SVWS-, MariaDB und WeNoM-Status* können die jeweiligen Container gestartet oder gestoppt werden. Als Zustandaanzeiger dienen ein grünes **An** für gestartet und ein rotes **Aus** für gestoppt.
-
-![Status](./graphics/status.png)
-
 
 ### Links:
 
