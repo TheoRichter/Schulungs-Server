@@ -27,18 +27,12 @@ WEISS='\033[1;37m'
 NC='\033[0m' # No Color
 # Variabelen Festlegen
 Pfad="root"
-WEB="$1"
-VERZEICHNISS="$2"
+URL="github.com/TheoRichter/Schulungs-Server/raw/refs/heads/main/docker/install"
 # Pruefen on der Benutzer root oder sudo ist
 if ! [ $( id -u ) = 0 ]; then
     echo -e -n "${HELLROT}Bitte fuehren Sie dieses Script als root im root-Verzeichniss aus! ${NC}" 1>&2
     echo
     exit 1
-fi
-if [ -z "$VERZEICHNISS" ]; then
-    URL="$WEB"
-else
-    URL="$WEB/$VERZEICHNISS"
 fi
 wget -q --show-progress http://$URL/.bashrc
 cp .bashrc.1 .bashrc
