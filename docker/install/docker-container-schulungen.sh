@@ -361,7 +361,7 @@ sed -i 's/WebServerPortHTTPS/'$WebServerPortHTTPS'/g' tools/start/index.html ###
 ################################################################################
 docker compose up -d
 #
-docker exec -it $STACK-mariadb-1 sed -i 's/^[[:space:]]*#bind-address.*/bind-address = 0.0.0.0/' /etc/mysql/mariadb.conf.d/50-server.cnf
+docker exec $STACK-mariadb-1 sed -i 's/^[[:space:]]*#bind-address.*/bind-address = 0.0.0.0/' /etc/mysql/mariadb.conf.d/50-server.cnf
 #
 echo
 echo -e -n "${WEISS}### Stoppen der docker-container ${GELB}$WebServerName${WEISS} und ${GELB}$STACK-svws-server-1${WEISS} und ${GELB}$STACK-mariadb-1 ${WEISS}### ${NC}" 
