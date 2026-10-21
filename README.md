@@ -4,7 +4,7 @@
 
 ### Online-Installation
 
-https://github.com/TheoRichter/Schulungs-Server/raw/refs/heads/main/docker/install/docker.sh
+https://raw.githubusercontent.com/TheoRichter/Schulungs-Server/refs/heads/main/docker/install/docker.sh
 
 ### Netzwerk-Installation
 
