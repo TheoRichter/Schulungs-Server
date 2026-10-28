@@ -14,7 +14,7 @@ Es kann sein das beim Einbinden der Netzlaufwerke nach einem Benutzername und de
 
 Um einen reibungslosen Betrieb zu gewährleisten müßen zwei Netzlaufwerke eingebunden werde.
 
-netzlaufwerk (\\\docker*IP*) (Z:)
+netzlaufwerk (\\docker*IP*) (Z:)
 
 ![netzlaufwerk](./graphics/z.png)
 
