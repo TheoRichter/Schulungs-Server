@@ -20,7 +20,7 @@ netzlaufwerk (\\docker*IP*) (Z:)
 
 und
 
-PC-01 (\\\docker**IP**\netzlaufwerk\SVWS-Arbeitsverzeichnisse)(Y:)
+PC-01 (\\docker**IP**\netzlaufwerk\SVWS-Arbeitsverzeichnisse)(Y:)
 
 ![PC-01](./graphics/y.png)
 
