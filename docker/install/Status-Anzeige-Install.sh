@@ -1,12 +1,13 @@
 #!/bin/bash
+URL="$1"
 STACK=""
 ################################################
 while read ZEILE; do
   STACK=$(echo $ZEILE | awk -F : '{print $1}')
-  mkdir /var/www/html/docker/$STACK
+  ## mkdir /var/www/html/docker/$STACK
   cd /var/www/html/docker/$STACK
-  cp -a /root/$STACK/. -d /var/www/html/docker/$STACK/$STACK
-  wget -q --show-progress http://web.webolch.de/bauanleitung/downloads/linux/SH-Scripte/docker-compose/DockerWebseitenContainerStatus.zip
+  ## cp -a /root/$STACK/. -d /var/www/html/docker/$STACK/$STACK
+  wget -q --show-progress http://$URL/DockerWebseitenContainerStatus.zip
   unzip DockerWebseitenContainerStatus.zip
   chown -R www-data:www-data /var/www/html/
   rm DockerWebseitenContainerStatus.zip
