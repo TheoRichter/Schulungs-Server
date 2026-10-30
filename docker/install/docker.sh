@@ -82,6 +82,9 @@ systemctl status ssh --no-pager
 wget -q --show-progress http://$URL/php.zip
 unzip php.zip
 mv php.ini /etc/php/8.4/apache2
+wget -q --show-progress http://$URL/php.zip
+unzip php.zip
+mv php.ini /etc/php/8.4/cli
 systemctl restart apache2
 systemctl status apache2 --no-pager
 #
