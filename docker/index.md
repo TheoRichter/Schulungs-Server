@@ -15,7 +15,7 @@ Bei der ausgewählte Seite ist die Farbe Rot und an der ersten Position.
 Hier wird der erste und der letzte Container angezeigt. 
 
 **STACK:**
-pc-01 und darunter der letzte pc.
+pc-01 und darunter der letzte PC.
 
 **SVWS-Status:**
 Mit Start oder Stop können alle SVWS-Container gestartet oder bendet werden.
