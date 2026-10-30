@@ -292,7 +292,7 @@ cp schulungen.txt /var/www/html/sh
 cp schid3connection.txt /var/www/html/sh
 cp schulungen.txt /var/www/html/docker
 ###############################################################
-cd /root
+cd /var/www/html/docker
 ###############################################################
 while read ZEILE; do
   STACK=$(echo $ZEILE | awk -F : '{print $1}')
@@ -319,6 +319,8 @@ while read ZEILE; do
 #echo
 #sleep3
 ########################################################################################################################################################################################
+  mkdir $STACK
+  cd $STACK
   mkdir $STACK
   cd $STACK
   wget -q --show-progress http://$URL/docker-compose.zip
@@ -380,7 +382,7 @@ done  < schulungen.txt
 echo                                                                               ### 
 echo -e -n "${HELLGRAU}### Installation der Statusanzeige im WebProjekt ### ${NC}" ### 
 echo                                                                               ###
-bash Status-Anzeige-Install.sh                                                     ###
+bash Status-Anzeige-Install.sh $URL                                                ###
 echo                                                                               ###  
 echo -e -n "${HELLGRUEN} OK ${NC}"                                                 ###
 echo                                                                               ###
