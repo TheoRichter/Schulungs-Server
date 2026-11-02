@@ -34,7 +34,7 @@ echo
 ### Die Steuerdatei: schulungen.txt ausfuellen ################
 ###############################################################
 echo
-read -p  "Die aktuelle SVWS-Version (z.B. 1.4.1) eingeben: " SVWSVERSION
+read -p  "Die aktuelle SVWS-Version (z.B. 1.5.1) eingeben: " SVWSVERSION
 echo
 ##################################################################
 cd /var/www/html/inc/conf                                      ###

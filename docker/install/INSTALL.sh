@@ -118,9 +118,9 @@ rm index.html
 unzip DockerWebseiten.zip
 rm DockerWebseiten.zip
 #########################################################################################################################
-##chmod -R 744 /var/www/html/
 chown -R www-data:www-data /var/www/html/
-#################################
+chmod -R 775 /var/www/html/sqlite/
+################################
 ### Die IP des LXCs eingeben  ###
 #################################
 echo
@@ -135,7 +135,7 @@ echo
 echo -e -n "${TUERKIS}Installation des SAMBA-SERVERS erstellen ${NC}"
 echo
 echo
-read -p  "Hier die SCHILD_VERSIONSNR z.B. 3.5.0 eintragen: " SCHILD_VERSIONSNR
+read -p  "Hier die SCHILD_VERSIONSNR z.B. 3.6.0 eintragen: " SCHILD_VERSIONSNR
 echo
 ##########################################################################
 ######## geaendert am 10-08-2026                                       ###
