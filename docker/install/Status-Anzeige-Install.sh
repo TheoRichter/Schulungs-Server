@@ -1,17 +1,15 @@
 #!/bin/bash
-URL="$1"
 STACK=""
+URL="$1"
 ################################################
 while read ZEILE; do
   STACK=$(echo $ZEILE | awk -F : '{print $1}')
-  ## mkdir /var/www/html/docker/$STACK
   cd /var/www/html/docker/$STACK
-  ## cp -a /root/$STACK/. -d /var/www/html/docker/$STACK/$STACK
   wget -q --show-progress http://$URL/DockerWebseitenContainerStatus.zip
   unzip DockerWebseitenContainerStatus.zip
   chown -R www-data:www-data /var/www/html/
   rm DockerWebseitenContainerStatus.zip
-sleep 3
+sleep 1
 #######################################################
 ### webserver_start_stop.php                        ###
 sed -i 's/XX/'$STACK'/g' webserver_start_stop.php   ###

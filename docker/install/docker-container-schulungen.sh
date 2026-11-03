@@ -3,7 +3,7 @@
 ### SQliteDatenbankSchematas  ###
 ### in Maridb Schreiben       ###  
 ### Erstellt von Theo Richter ###
-### am 15.10.2024     (c)     ###
+### am 03.11.2026     (c)     ###
 #################################
 ### Farbdefinitionen ####
 #   TEXT in Weiss       #
@@ -34,7 +34,7 @@ echo
 ### Die Steuerdatei: schulungen.txt ausfuellen ################
 ###############################################################
 echo
-read -p  "Die aktuelle SVWS-Version (z.B. 1.5.1) eingeben: " SVWSVERSION
+read -p  "Die aktuelle SVWS-Version (z.B. 1.4.1) eingeben: " SVWSVERSION
 echo
 ##################################################################
 cd /var/www/html/inc/conf                                      ###
@@ -72,6 +72,7 @@ do
     echo -n "PC-$NUMMER:$SERVERNAME:" >> schid3connection.txt
     echo "30$NUMMER:100$NUMMER" >> schid3connection.txt
 done
+cp schid3connection.txt /var/www/html/sh
 ############################################################################
 while read ZEILE; do
   WINPC=$(echo $ZEILE | awk -F : '{print $1}')
@@ -82,8 +83,10 @@ while read ZEILE; do
 cd /netzlaufwerk/SVWS-Arbeitsverzeichnisse
   mkdir $WINPC
   mkdir $WINPC/Connection-Files
-  mkdir $WINPC/NM3
   mkdir $WINPC/Schild-Reports
+  mkdir $WINPC/Sicherungen
+  mkdir $WINPC/Statistik
+#######################################################################################################################################
   cp -a /netzlaufwerk/Schild-NRW-3-Reports/"Reports Allgemein"/ -d $WINPC/Schild-Reports/"Reports Allgemein"/
   cp -a /netzlaufwerk/Schild-NRW-3-Reports/"Reports Leistungsübersichten"/ -d $WINPC/Schild-Reports/"Reports Leistungsübersichten"/
   cp -a /netzlaufwerk/Schild-NRW-3-Reports/"Reports PS"/ -d $WINPC/Schild-Reports/"Reports PS"/
@@ -96,8 +99,7 @@ cd /netzlaufwerk/SVWS-Arbeitsverzeichnisse
   cp -a /netzlaufwerk/Schild-NRW-Zeugnisse-Sek1/ -d $WINPC/Schild-Reports/"Zeugnisse - Sek1"/
   cp -a /netzlaufwerk/Schild-NRW-Zeugnisse-Sek2/ -d $WINPC/Schild-Reports/"Zeugnisse - Sek2"/
   cp -a /netzlaufwerk/Schild-NRW-WBK-Zeugnisse/ -d $WINPC/Schild-Reports/"Zeugnisse - WBK"/
-  mkdir $WINPC/Sicherungen
-  mkdir $WINPC/Statistik
+############################################################################################
   cd $WINPC/Connection-Files
   wget -q --show-progress http://$URL/Connection-Files.zip
   unzip Connection-Files.zip
@@ -204,7 +206,7 @@ sed -i 's/SVWSPort/'$SVWSPort'/g' S2Schulung.con                                
 #
 chmod -R 777 /netzlaufwerk/SVWS-Arbeitsverzeichnisse/$WINPC
 ###chown -R nobody:nogroup /netzlaufwerk/SVWS-Arbeitsverzeichnisse/$WINPC
-#
+
 done < schid3connection.txt
 ################################################################################################################################################################################################
 #
@@ -245,17 +247,13 @@ while [ "$i" -le "$anzahl" ]; do
   cat <<EOF >> "$dateiname"
 <!-- ANFANG pc-$pcNummer -->
 <tr> 
-  <td class="w3-border w3-center"><b>pc-$pcNummer</b></td>
-  <td class="w3-border w3-center">
-   <a href="https://$LOCALEIP:100$pcNummer/app/start" target="_blank" class="w3-button w3-black w3-hover-white">
-     <img src="png/svws_anwendungen.png" alt="svws_anwendungen.png"></img>
-   </a>
-  </td>
-  <td class="w3-border w3-right"><iframe src="docker/pc-$pcNummer/svws-server.html" width="45" height="40" frameborder="0"></iframe></td>
+  <td class="w3-border"><b>pc-$pcNummer</b></td>
+  <td class="w3-border"><a href="https://$LOCALEIP:100$pcNummer/app/start" target="_blank">&nbsp;<img src="png/svws_neu.png" class="w3-round" alt="svws_neu.png"></a></td>
+  <td class="w3-border"><iframe src="docker/pc-$pcNummer/svws-server.html" width="45" height="40" frameborder="0"></iframe></td>
   <td class="w3-border"><iframe src="docker/pc-$pcNummer/svws-server_start_stop.php" width="126" height="40" frameborder="1"></iframe></td>
-  <td class="w3-border w3-right"><iframe src="docker/pc-$pcNummer/mariadb.html" width="45" height="40" frameborder="0"></iframe></td>
+  <td class="w3-border"><iframe src="docker/pc-$pcNummer/mariadb.html" width="45" height="40" frameborder="0"></iframe></td>
   <td class="w3-border"><iframe src="docker/pc-$pcNummer/mariadb_start_stop.php" width="126" height="40" frameborder="1"></iframe></td>
-  <td class="w3-border w3-right"><iframe src="docker/pc-$pcNummer/webserver.html" width="45" height="40" frameborder="0"></iframe></td>
+  <td class="w3-border"><iframe src="docker/pc-$pcNummer/webserver.html" width="45" height="40" frameborder="0"></iframe></td>
   <td class="w3-border"><iframe src="docker/pc-$pcNummer/webserver_start_stop.php" width="126" height="40" frameborder="1"></iframe></td>
 </tr>
 <!-- ENDE pc-$pcNummer -->
@@ -289,7 +287,6 @@ do
 done
 cp schulungen.txt /var/www/html
 cp schulungen.txt /var/www/html/sh
-cp schid3connection.txt /var/www/html/sh
 cp schulungen.txt /var/www/html/docker
 ###############################################################
 cd /var/www/html/docker
@@ -305,19 +302,6 @@ while read ZEILE; do
   SVWSVersion=$(echo $ZEILE | awk -F : '{print $8}')
   SERVERNAME=$(echo $ZEILE | awk -F : '{print $9}')
   Pfad=$(echo $ZEILE | awk -F : '{print $10}') 
-########################################################################################################################################################################################
-#echo
-#echo -e -n "${HELLGRAU}STACK:${GELB}$STACK ${HELLGRAU}SERVERNAME:${GELB}$SERVERNAME ${HELLGRAU}Pfad:${GELB}$Pfad ${NC}"
-#echo
-#echo -e -n "${HELLGRAU}MariaDBPort:${GELB}$MariaDBPort ${HELLGRAU}MariaDB_ROOT_PASSWORD:${GELB}$MariaDB_ROOT_PASSWORD ${NC}"
-#echo
-#echo -e -n "${HELLGRAU}WebserverPortHTTP:${GELB}$WebserverPortHTTP ${HELLGRAU}WebserverPortHTTPS:${GELB}$WebserverPortHTTPS ${HELLGRAU}WebserverName:${GELB}$WebserverName ${NC}"
-#echo
-#echo -e -n "${HELLGRAU}PHPmyAdminPort:${GELB}$PHPmyAdminPort ${HELLGRAU}PHPmyAdminName:${GELB}$PHPmyAdminName ${NC}"
-#echo
-#echo -e -n "${HELLGRAU}SVWSPort:${GELB}$SVWSPort ${HELLGRAU}SVWSVersion:${GELB}$SVWSVersion ${NC}" 
-#echo
-#sleep3
 ########################################################################################################################################################################################
   mkdir $STACK
   cd $STACK
@@ -374,13 +358,15 @@ docker stop $STACK-mariadb-1
 echo
 echo -e -n "${HELLGRUEN} OK ${NC}" 
 echo
-sleep 2
-###################################################################################################################################################################################################################
-cd /var/www/html/docker
-done  < schulungen.txt
+######################################################################################
+cd /var/www/html/docker                                                            ### 
+######################################################################################
+done  < schulungen.txt                                                             ###
+######################################################################################
+cd /root                                                                           ###
 ######################################################################################
 echo                                                                               ### 
-echo -e -n "${HELLGRAU}### Installation der Statusanzeige im WebProjekt ### ${NC}" ### 
+echo -e -n "${LILA}### Installation der Statusanzeige im WebProjekt ### ${NC}"     ### 
 echo                                                                               ###
 bash Status-Anzeige-Install.sh $URL                                                ###
 echo                                                                               ###  
@@ -388,7 +374,7 @@ echo -e -n "${HELLGRUEN} OK ${NC}"                                              
 echo                                                                               ###
 ######################################################################################
 echo                                                                               ### 
-echo -e -n "${HELLGRAU}## Installation des letzten STACKs im WebProjekt ### ${NC}" ### 
+echo -e -n "${LILA}## Installation des letzten STACKs im WebProjekt ### ${NC}"     ### 
 echo                                                                               ###
 bash Erste-Letzte-Zeile.sh                                                         ###
 echo                                                                               ###  
@@ -396,7 +382,7 @@ echo -e -n "${HELLGRUEN} OK ${NC}"                                              
 echo                                                                               ###
 ######################################################################################
 echo                                                                               ### 
-echo -e -n "${HELLGRAU}## Einpflegen der DatenbankSchemata in die STACKs ## ${NC}" ### 
+echo -e -n "${LILA}## Einpflegen der DatenbankSchemata in die STACKs ## ${NC}"     ### 
 echo                                                                               ###
 ######################################################################################
 bash docker-schemata.sh
