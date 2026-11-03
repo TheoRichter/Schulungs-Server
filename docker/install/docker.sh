@@ -115,6 +115,10 @@ rm DockerWebseiten.zip
 #########################################################################################################################
 chown -R www-data:www-data /var/www/html/
 chmod -R 775 /var/www/html/sqlite/
+chmod -R 775 /var/www/html/sqlite/
+chmod 660 /var/www/html/sqlite/app.sqlite
+chmod 660 /var/www/html/sqlite/tools.sqlite
+chmod 644 /var/www/html/sqlite/client.sec
 #################################
 ### Die IP des LXCs eingeben  ###
 #################################

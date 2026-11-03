@@ -34,7 +34,7 @@ echo
 ### Die Steuerdatei: schulungen.txt ausfuellen ################
 ###############################################################
 echo
-read -p  "Die aktuelle SVWS-Version (z.B. 1.5.1) eingeben: " SVWSVERSION
+read -p  "Die aktuelle SVWS-Version (z.B. 1.4.1) eingeben: " SVWSVERSION
 echo
 ##################################################################
 cd /var/www/html/inc/conf                                      ###
@@ -248,7 +248,7 @@ while [ "$i" -le "$anzahl" ]; do
 <!-- ANFANG pc-$pcNummer -->
 <tr> 
   <td class="w3-border"><b>pc-$pcNummer</b></td>
-  <td class="w3-border"><a href="https://$LOCALEIP:100$pcNummer/app/start" target="_blank">&nbsp;<img src="png/svws_neu.png" class="w3-round" alt="svws_neu.png"></a></td>
+  <td class="w3-border"><a href="https://$LOCALEIP:100$pcNummer/app/start" target="_blank">&nbsp;<img src="png/svws_anwendungen.png" class="w3-round" alt="svws_anwendungen.png"></a></td>
   <td class="w3-border"><iframe src="docker/pc-$pcNummer/svws-server.html" width="45" height="40" frameborder="0"></iframe></td>
   <td class="w3-border"><iframe src="docker/pc-$pcNummer/svws-server_start_stop.php" width="126" height="40" frameborder="1"></iframe></td>
   <td class="w3-border"><iframe src="docker/pc-$pcNummer/mariadb.html" width="45" height="40" frameborder="0"></iframe></td>
@@ -366,7 +366,7 @@ done  < schulungen.txt                                                          
 cd /root                                                                           ###
 ######################################################################################
 echo                                                                               ### 
-echo -e -n "${WEISS}### Installation der Statusanzeige im WebProjekt ### ${NC}"    ### 
+echo -e -n "${LILA}### Installation der Statusanzeige im WebProjekt ### ${NC}"     ### 
 echo                                                                               ###
 bash Status-Anzeige-Install.sh $URL                                                ###
 echo                                                                               ###  
@@ -374,7 +374,7 @@ echo -e -n "${HELLGRUEN} OK ${NC}"                                              
 echo                                                                               ###
 ######################################################################################
 echo                                                                               ### 
-echo -e -n "${WEISS}## Installation des letzten STACKs im WebProjekt ### ${NC}"    ### 
+echo -e -n "${LILA}## Installation des letzten STACKs im WebProjekt ### ${NC}"     ### 
 echo                                                                               ###
 bash Erste-Letzte-Zeile.sh                                                         ###
 echo                                                                               ###  
