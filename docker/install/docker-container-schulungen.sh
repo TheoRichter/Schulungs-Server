@@ -34,7 +34,7 @@ echo
 ### Die Steuerdatei: schulungen.txt ausfuellen ################
 ###############################################################
 echo
-read -p  "Die aktuelle SVWS-Version (z.B. 1.4.1) eingeben: " SVWSVERSION
+read -p  "Die aktuelle SVWS-Version (z.B. 1.5.1) eingeben: " SVWSVERSION
 echo
 ##################################################################
 cd /var/www/html/inc/conf                                      ###
@@ -366,7 +366,7 @@ done  < schulungen.txt                                                          
 cd /root                                                                           ###
 ######################################################################################
 echo                                                                               ### 
-echo -e -n "${LILA}### Installation der Statusanzeige im WebProjekt ### ${NC}"     ### 
+echo -e -n "${WEISS}### Installation der Statusanzeige im WebProjekt ### ${NC}"    ### 
 echo                                                                               ###
 bash Status-Anzeige-Install.sh $URL                                                ###
 echo                                                                               ###  
@@ -374,7 +374,7 @@ echo -e -n "${HELLGRUEN} OK ${NC}"                                              
 echo                                                                               ###
 ######################################################################################
 echo                                                                               ### 
-echo -e -n "${LILA}## Installation des letzten STACKs im WebProjekt ### ${NC}"     ### 
+echo -e -n "${WEISS}## Installation des letzten STACKs im WebProjekt ### ${NC}"    ### 
 echo                                                                               ###
 bash Erste-Letzte-Zeile.sh                                                         ###
 echo                                                                               ###  

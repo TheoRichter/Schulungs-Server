@@ -82,15 +82,16 @@ sleep 1
 wget -q --show-progress http://$URL/ssh.zip
 unzip ssh.zip
 mv sshd_config /etc/ssh
+rm ssh.zip
 systemctl restart ssh
 systemctl status ssh --no-pager
 ## php.ini POST download limit auf 3800MB erhöht
 wget -q --show-progress http://$URL/php.zip
 unzip php.zip
 mv php.ini /etc/php/8.4/apache2
-wget -q --show-progress http://$URL/php.zip
 unzip php.zip
 mv php.ini /etc/php/8.4/cli
+rm php.zip
 systemctl restart apache2
 systemctl status apache2 --no-pager
 #
