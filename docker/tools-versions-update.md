@@ -12,6 +12,8 @@ Mit betätigen der Schaltfläche **Das Update durchführen** wereden die neuen R
 
 Hinweis: *Bitte nach dem Update die Seite neu Laden!!*
 
+![tools-tabelle-F5](./graphics/tools-tabelle-F5.png)
+
 ### Links:
 
 [Startseite](/docker/index.md)
