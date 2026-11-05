@@ -6,7 +6,7 @@ In de Spalte **Aktuell** wird die neuste Realease Nummer angezeigt.
 
 ![svws-tabelle](./graphics/svws-tabelle.png)
 
-Durch drücken des Botton die **Die SVWS-Versions-Nummern-Eintragen** öffnet sich das Formular zum Eintragen der Versionsnummern .
+Durch drücken des Botton **Die SVWS-Versions-Nummern-Eintragen** öffnet sich das Formular zum Eintragen der Versionsnummern .
 
 ![knopf_svws-versionsnummern](./graphics/knopf_svws-versionsnummern.png)
 
