@@ -2,7 +2,7 @@
 
 ## 1. Schritt
 
-In de Spalte **Aktuell** neuste Realease Nummer aangezeigt.
+In de Spalte **Aktuell** wird die neuste Realease Nummer angezeigt.
 
 ![svws-tabelle](./graphics/svws-tabelle.png)
 
