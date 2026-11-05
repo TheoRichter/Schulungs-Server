@@ -1,14 +1,16 @@
-# Die SVWS-Server Releas Version Updaten
+![svsw-versions-nummer-gruen](./graphics/svws-versions-update.png)
 
 ## 1. Schritt
 
-Durch drücken des Botton die alte (Grüne) SVWS-Versions-Nummer durch die neue SVWS-Versions-Nummer in die Text-Datei <i>schulungen.txt</i> ersetzen. Nach drücken von weiter ändert sich die SVWS-Versions-Nummer in die neu eingetragene.
+In de Spalte Aktuell wird beim Aufrufen der Seite die aktuelle  Realease Nummer abgefragt und eingetragen.
 
-![svsw-versions-nummer-gruen](./graphics/svsw-versions-nummer-gruen.png)
+![sanzeige-versionsnummern](./graphics/anzeige-versionsnummern.png)
 
-Hie die geänderte Tabellenansicht.
+Durch drücken des Botton die **Die SVWS-Versions-Nummern-Eintragen** öffnet sich das Formular zum Eintragen der Versionsnummern .
 
-![schulungen](./graphics/schulungen.png)
+![knopf_svws-versionsnummern](./graphics/knopf_svws-versionsnummern.png)
+
+![svws-nummern-eintragen](./graphics/svws-nummern-eintragen.png)
 
 ## 2. Schritt
 
