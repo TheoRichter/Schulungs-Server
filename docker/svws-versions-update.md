@@ -16,6 +16,9 @@ Durch drücken des Botton **Die SVWS-Versions-Nummern-Eintragen** öffnet sich d
 
 Update auf das neuste Release des SVWS-Server durchführen.
 
+![svws-update-knopf](./graphics/svws-update-knopf.png)
+
+
 ### Links:
 
 [Startseite](/docker/index.md)
