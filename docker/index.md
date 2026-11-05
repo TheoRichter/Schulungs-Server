@@ -39,7 +39,7 @@ Durch betätigen der grauen Schaltflächen weden die jeweiligen Schemata bei all
 
 [SVWS-Versions-Update](/docker/svws-versions-update.md)
 
-[Wenom-Versions-Update](/docker/wenom-versions-update.md)
+[SVWS-Tools-Update](/docker/tools-versions-update.md)
 
 [Schild-NRW-3](/docker/schild3.md)
 

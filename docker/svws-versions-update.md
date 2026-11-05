@@ -24,7 +24,7 @@ Update auf das neuste Release des SVWS-Server durchführen.
 
 [SVWS-Versions-Update](/docker/svws-versions-update.md)
 
-[Wenom-Versions-Update](/docker/wenom-versions-update.md)
+[SVWS-Tools-Update](/docker/tools-versions-update.md)
 
 [Schild-NRW-3](/docker/schild3.md)
 
