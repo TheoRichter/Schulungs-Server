@@ -2,7 +2,7 @@
 
 ## 1. Schritt
 
-In de Spalte Aktuell wird beim Aufrufen der Seite die aktuelle  Realease Nummer abgefragt und eingetragen.
+In de Spalte **Aktuell** neuste Realease Nummer aangezeigt.
 
 ![svws-tabelle](./graphics/svws-tabelle.png)
 
