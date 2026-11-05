@@ -4,7 +4,7 @@
 
 In de Spalte Aktuell wird beim Aufrufen der Seite die aktuelle  Realease Nummer abgefragt und eingetragen.
 
-![sanzeige-versionsnummern](./graphics/anzeige-versionsnummern.png)
+![svws-tabelle](./graphics/svws-tabelle.png)
 
 Durch drücken des Botton die **Die SVWS-Versions-Nummern-Eintragen** öffnet sich das Formular zum Eintragen der Versionsnummern .
 
