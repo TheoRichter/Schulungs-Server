@@ -93,6 +93,7 @@ systemctl status apache2 --no-pager
 wget -q --show-progress http://$URL/update.sh
 wget -q --show-progress http://$URL/crontab
 wget -q --show-progress http://$URL/jahrgangswechsel_datenbank.sh
+wget -q --show-progress http://$URL/portainer.sh
 mkdir -p /var/log/cron
 mv update.sh /usr/local/sbin/update.sh
 chmod -R 744 /usr/local/sbin/update.sh
