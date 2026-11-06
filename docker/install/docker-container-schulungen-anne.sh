@@ -385,4 +385,4 @@ echo                                                                            
 echo -e -n "${WEISS}## Einpflegen der DatenbankSchemata in die STACKs ## ${NC}"    ### 
 echo                                                                               ###
 ######################################################################################
-bash docker-schemata.sh
+bash docker-schemata-anne.sh
