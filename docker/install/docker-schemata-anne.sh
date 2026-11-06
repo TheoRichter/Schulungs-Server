@@ -32,7 +32,7 @@ PHPmyAdminPort=""
 SVWSPort=""
 SVWSVersion=""
 STACK=""
-MariaDB_DB_PASSWORD="rootKennwort"
+MariaDB_DB_PASSWORD="1ttu2sz"
 MariaDB_ROOT_PASSWORD=""
 PHPmyAdminName=""
 WebserverName=""
@@ -251,7 +251,7 @@ while read ZEILE; do
   echo
   sleep 4
   echo
-    curl --user "dbadmin:${MariaDB_DB_PASSWORD}" \
+    curl --user "fachberater:${MariaDB_DB_PASSWORD}" \
      -k --insecure \
      -X "POST" "https://${SERVERNAME}:${SVWSPort}/api/schema/root/import/sqlite/${DB_NAME}" \
      -H "accept: application/json" \
