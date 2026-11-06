@@ -16,8 +16,6 @@ Hinweis: *Bitte nach dem Update die Seite neu Laden!!*
 
 ### Links:
 
-[Startseite](/docker/index.md)
-
 [SVWS-Schemata-Update](/docker/index.md)
 
 [SVWS-Versions-Update](/docker/svws-versions-update.md)

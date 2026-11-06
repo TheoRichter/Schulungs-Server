@@ -14,8 +14,6 @@ In den Spalten *SVWS-, MariaDB und WeNoM-Status* können die jeweiligen Containe
 
 ### Links:
 
-[Startseite](/docker/index.md)
-
 [SVWS-Schemata-Update](/docker/index.md)
 
 [SVWS-Versions-Update](/docker/svws-versions-update.md)

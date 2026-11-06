@@ -16,8 +16,6 @@ Durch Drücken von *SchILD3 Updaten* den Vorgang abschielssen.
 
 ### Links:
 
-[Startseite](/docker/index.md)
-
 [SVWS-Schemata-Update](/docker/index.md)
 
 [SVWS-Versions-Update](/docker/svws-versions-update.md)
