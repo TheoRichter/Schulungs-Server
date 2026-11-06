@@ -194,8 +194,8 @@ bash smbuser.sh
 echo
 chmod -R 777 /netzlaufwerk/
 chown -R www-data:www-data /netzlaufwerk/
-wget -q --show-progress http://$URL/docker-container-schulungen.sh
-wget -q --show-progress http://$URL/docker-schemata.sh
+wget -q --show-progress http://$URL/docker-container-schulungen-anne.sh
+wget -q --show-progress http://$URL/docker-schemata-anne.sh
 wget -q --show-progress http://$URL/Status-Anzeige-Install.sh
 wget -q --show-progress http://$URL/Erste-Letzte-Zeile.sh
 wget -q --show-progress http://$URL/vitepress.sh
@@ -228,5 +228,5 @@ usermod -aG sudo www-data
 usermod -aG docker www-data
 sleep 2
 #
-bash docker-container-schulungen.sh $URL
+bash docker-container-schulungen-anne.sh $URL
 
