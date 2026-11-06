@@ -3,7 +3,7 @@
 # Installation mit Apache2 php   #
 # Shellinabox und Samba          #
 # und Samba mit Schematas        #
-# Erstellt am 03.11.2026 von TR  #
+# Erstellt am 06.11.2026 von TR  #
 ##################################
 ### Farbdefinitionen ####
 #   TEXT in Weiss       #

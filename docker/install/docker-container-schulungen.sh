@@ -3,7 +3,7 @@
 ### SQliteDatenbankSchematas  ###
 ### in Maridb Schreiben       ###  
 ### Erstellt von Theo Richter ###
-### am 03.11.2026     (c)     ###
+### am 06.11.2026     (c)     ###
 #################################
 ### Farbdefinitionen ####
 #   TEXT in Weiss       #
@@ -248,7 +248,7 @@ while [ "$i" -le "$anzahl" ]; do
 <!-- ANFANG pc-$pcNummer -->
 <tr> 
   <td class="w3-border w3-center"><b>pc-$pcNummer</b></td>
-  <td class="w3-border w3-center"><a href="https://$LOCALEIP:100$pcNummer/app/start" target="_blank">&nbsp;<img src="png/svws_anwendungen.png" class="svws-bild" alt="svws_anwendungen.png"></a></td>
+  <td class="w3-border w3-center"><a href="https://$LOCALEIP:100$pcNummer/app/start" target="_blank"><img src="png/svws_anwendungen.png" class="svws-bild" alt="svws_anwendungen.png"></a></td>
   <td class="w3-border"><iframe src="docker/pc-$pcNummer/svws-server.html" width="45" height="40" frameborder="0"></iframe></td>
   <td class="w3-border"><iframe src="docker/pc-$pcNummer/svws-server_start_stop.php" width="126" height="40" frameborder="1"></iframe></td>
   <td class="w3-border"><iframe src="docker/pc-$pcNummer/mariadb.html" width="45" height="40" frameborder="0"></iframe></td>

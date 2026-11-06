@@ -3,7 +3,7 @@
 ### SQliteDatenbankSchematas  ###
 ### in Maridb Schreiben       ###  
 ### Erstellt von Theo Richter ###
-### am 07.10.2022     (c)     ###
+### am 06.11.2026     (c)     ###
 #################################
 ### Farbdefinitionen ####
 #   TEXT in Weiss       #
