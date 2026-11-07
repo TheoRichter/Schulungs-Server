@@ -347,6 +347,10 @@ sed -i 's/WebServerPortHTTPS/'$WebServerPortHTTPS'/g' tools/start/index.html ###
 ################################################################################
 docker compose up -d
 #
+## Warten, bis mariaDB die Erstinitialisierung (MariaDB_ROOT_PASSWORD, User, DB) abgeschlossen hat
+until docker logs $STACK-mariadb-1 2>&1 | grep -q "init process done"; do sleep 3; done
+docker exec $STACK-mariadb-1 mariadb -uroot -p"MariaDB_ROOT_PASSWORD" -e "SELECT 1" >/dev/null 2>&1; do sleep 3; done
+## mariaDB für das locale Netz nutzbar machen  
 docker exec $STACK-mariadb-1 sed -i 's/^[[:space:]]*#bind-address.*/bind-address = 0.0.0.0/' /etc/mysql/mariadb.conf.d/50-server.cnf
 #
 echo
