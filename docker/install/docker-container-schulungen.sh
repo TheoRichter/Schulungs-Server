@@ -323,6 +323,7 @@ sed -i 's/00001/'$MariaDBPort'/g' docker-compose-svws.yml            ###
 sed -i 's/leer/'$MariaDB_ROOT_PASSWORD'/g' .env                      ###
 ### MariaDB_DATA #######################################################
 sed -i 's/00005/'$STACK'/g' docker-compose.yml                       ###
+sed -i 's/00005/'$STACK'/g' docker-compose-svws.yml                  ###
 ### WebServerName ######################################################
 sed -i 's/WebServerName/'$WebServerName'/g' docker-compose.yml       ###
 sed -i 's/WebServerName/'$WebServerName'/g' docker-compose-wenom.yml ###
