@@ -41,7 +41,7 @@ echo
 echo -e -n "${TUERKIS}Update und Upgrade des Debian ${NC}"
 echo
 sleep 1
-apt-get update && apt upgrade -y && apt install net-tools ssh gnupg2 ca-certificates curl git unzip mc zip samba apache2 php sudo htop libsqlite3-dev sqlite3 php-sqlite3 -y
+apt-get update && apt upgrade -y && apt install net-tools ssh gnupg2 ca-certificates curl git unzip mc zip samba apache2 php php-curl sudo htop libsqlite3-dev sqlite3 php-sqlite3 -y
 a2ensite default-ssl.conf
 a2enmod ssl
 systemctl restart apache2
