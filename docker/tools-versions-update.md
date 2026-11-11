@@ -20,8 +20,6 @@ Hinweis: *Bitte nach dem Update die Seite neu Laden!!*
 
 [SVWS-Versions-Update](/docker/svws-versions-update.md)
 
-[SVWS-Tools-Update](/docker/tools-versions-update.md)
-
 [Schild-NRW-3](/docker/schild3.md)
 
 [Status/Link](/docker/container-status.md)
