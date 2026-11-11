@@ -21,5 +21,3 @@ In den Spalten *SVWS-, MariaDB und WeNoM-Status* können die jeweiligen Containe
 [SVWS-Tools-Update](/docker/tools-versions-update.md)
 
 [Schild-NRW-3](/docker/schild3.md)
-
-[Status/Link](/docker/container-status.md)

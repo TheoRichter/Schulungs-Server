@@ -22,6 +22,4 @@ Durch Drücken von *SchILD3 Updaten* den Vorgang abschielssen.
 
 [SVWS-Tools-Update](/docker/tools-versions-update.md)
 
-[Schild-NRW-3](/docker/schild3.md)
-
 [Status/Link](/docker/container-status.md)
