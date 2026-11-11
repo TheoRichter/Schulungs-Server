@@ -23,8 +23,6 @@ Update auf das neuste Release des SVWS-Server durchführen.
 
 [SVWS-Schemata-Update](/docker/index.md)
 
-[SVWS-Versions-Update](/docker/svws-versions-update.md)
-
 [SVWS-Tools-Update](/docker/tools-versions-update.md)
 
 [Schild-NRW-3](/docker/schild3.md)
