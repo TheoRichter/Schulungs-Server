@@ -33,8 +33,6 @@ Durch betätigen der grauen Schaltflächen weden die jeweiligen Schemata bei all
 
 ### Links:
 
-[SVWS-Schemata-Update](/docker/index.md)
-
 [SVWS-Versions-Update](/docker/svws-versions-update.md)
 
 [SVWS-Tools-Update](/docker/tools-versions-update.md)
