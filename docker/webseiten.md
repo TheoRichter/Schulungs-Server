@@ -22,8 +22,6 @@ Nach eingabe des Benutzername und des Kennworts öffnet sich die Startseite.
 
 ### Links:
 
-[Startseite](/docker/index.md)
-
 [SVWS-Schemata-Update](/docker/index.md)
 
 [SVWS-Versions-Update](/docker/svws-versions-update.md)
