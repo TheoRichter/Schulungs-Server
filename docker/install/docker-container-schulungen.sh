@@ -283,7 +283,7 @@ do
     echo -n "pc-$NUMMER:30$NUMMER:80$NUMMER:81$NUMMER:" >> schulungen.txt
     echo -n "pc-$NUMMER-Webserver:" >> schulungen.txt
     echo -n "100$NUMMER:$MariaDB_ROOT_PASSWORD:" >> schulungen.txt
-    echo "$SVWSVERSION:$SERVERNAME:netzlaufwerk" >> schulungen.txt
+    echo "$SVWSVERSION:$SERVERNAME:netzlaufwerk:82$NUMMER" >> schulungen.txt
 done
 cp schulungen.txt /var/www/html
 cp schulungen.txt /var/www/html/sh
@@ -302,6 +302,7 @@ while read ZEILE; do
   SVWSVersion=$(echo $ZEILE | awk -F : '{print $8}')
   SERVERNAME=$(echo $ZEILE | awk -F : '{print $9}')
   Pfad=$(echo $ZEILE | awk -F : '{print $10}') 
+  LPPort=$(echo $ZEILE | awk -F : '{print $11}')
 ########################################################################################################################################################################################
   mkdir $STACK
   cd $STACK
@@ -322,8 +323,8 @@ sed -i 's/00001/'$MariaDBPort'/g' docker-compose-svws.yml            ###
 ### MariaDB root Passwort ##############################################
 sed -i 's/leer/'$MariaDB_ROOT_PASSWORD'/g' .env                      ###
 ### MariaDB_DATA #######################################################
-sed -i 's/00006/'$STACK'/g' docker-compose.yml                       ###
-sed -i 's/00006/'$STACK'/g' docker-compose-svws.yml                  ###
+sed -i 's/00006/'$LPPort'/g' docker-compose.yml                      ###
+sed -i 's/00006/'$LPPort'/g' docker-compose-svws.yml                 ###
 ### WebServerName ######################################################
 sed -i 's/WebServerName/'$WebServerName'/g' docker-compose.yml       ###
 sed -i 's/WebServerName/'$WebServerName'/g' docker-compose-wenom.yml ###
@@ -333,6 +334,8 @@ sed -i 's/00002/'$WebServerPortHTTP'/g' docker-compose-wenom.yml     ###
 ### WebServerPortHTTPS  ################################################
 sed -i 's/00003/'$WebServerPortHTTPS'/g' docker-compose.yml          ###
 sed -i 's/00003/'$WebServerPortHTTPS'/g' docker-compose-wenom.yml    ###
+########################################################################
+### WebServerPortHTTPS  ################################################
 sed -i 's/00005/'$WebServerPortHTTPS'/g' docker-compose.yml          ###
 sed -i 's/00005/'$WebServerPortHTTPS'/g' docker-compose-wenom.yml    ###
 ########################################################################
