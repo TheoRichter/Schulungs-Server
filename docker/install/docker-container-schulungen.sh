@@ -329,7 +329,7 @@ sed -i 's/00003/'$WebServerPortHTTPS'/g' docker-compose-wenom.yml    ###
 ### SVWSPort ###########################################################
 sed -i 's/00004/'$SVWSPort'/g' docker-compose.yml                    ###
 sed -i 's/00004/'$SVWSPort'/g' docker-compose-svws.yml               ###
-### MariaDB_DATA #######################################################
+### LPMultiwahl #######################################################
 sed -i 's/00005/'$LPPort'/g' docker-compose.yml                      ###
 sed -i 's/00005/'$LPPort'/g' docker-compose-wenom.yml                ###
 ### WebServerPortHTTPS  ################################################
@@ -346,6 +346,7 @@ sed -i 's/svwslatest/'$SVWSVersion'/g' docker-compose.yml            ###
 ### index.html  ################################################################
 sed -i 's/SERVERNAME/'$SERVERNAME'/g' tools/start/index.html                 ###
 sed -i 's/SVWSPort/'$SVWSPort'/g' tools/start/index.html                     ###
+sed -i 's/LPPort/'$LPPort'/g' tools/start/index.html                         ###
 sed -i 's/WebServerPortHTTPS/'$WebServerPortHTTPS'/g' tools/start/index.html ###
 ################################################################################
 docker compose up -d
