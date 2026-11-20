@@ -333,8 +333,8 @@ sed -i 's/00004/'$SVWSPort'/g' docker-compose-svws.yml               ###
 sed -i 's/00005/'$LPPort'/g' docker-compose.yml                      ###
 sed -i 's/00005/'$LPPort'/g' docker-compose-wenom.yml                ###
 ### WebServerPortHTTPS  ################################################
-sed -i 's/00006/'$STACKS'/g' docker-compose.yml                      ###
-sed -i 's/00006/'$STACKS'/g' docker-compose-svws.yml                 ###
+sed -i 's/00006/'$STACK'/g' docker-compose.yml                       ###
+sed -i 's/00006/'$STACK'/g' docker-compose-svws.yml                  ###
 ### MariaDB root Passwort ##############################################
 sed -i 's/leer/'$MariaDB_ROOT_PASSWORD'/g' .env                      ###
 ### WebServerName ######################################################
