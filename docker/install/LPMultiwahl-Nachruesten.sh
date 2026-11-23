@@ -6,8 +6,6 @@
 ### 3. verschiebt multiwahl/ nach www/multiwahl              ###
 ### 4. traegt Port 82xx:7443 und das Volume ein              ###
 ### 5. startet den Webserver-Container neu                   ###
-###                                                          ###
-### Aufruf: bash LPMultiwahl-Nachruesten.sh <URL>            ###
 ################################################################
 ROT='\033[1;31m'
 GRUEN='\033[1;32m'
@@ -15,7 +13,7 @@ GELB='\033[1;33m'
 WEISS='\033[1;37m'
 NC='\033[0m' # No Color
 
-URL="$1"
+URL="github.com/TheoRichter/Schulungs-Server/raw/refs/heads/main/docker/install"
 QUELLE="/root/schulungen.txt"
 WEB="/var/www/html"
 VOLUME="./apache/multiwahl-ssl.conf:/etc/apache2/sites-enabled/multiwahl-ssl.conf"
@@ -59,7 +57,7 @@ compose_ergaenzen() {
 ################################################################
 stack_bearbeiten() {
   # unzip -o : ueberschreibt ohne Rueckfrage
-  if ! wget -q --show-progress -O LPMultiwahl.zip "http://$URL/LPMultiwahl.zip" || ! unzip -qo LPMultiwahl.zip; then
+  if ! wget -q --show-progress -O LPMultiwahl.zip "https://$URL/LPMultiwahl.zip" || ! unzip -qo LPMultiwahl.zip; then
     rm -f LPMultiwahl.zip
     echo -e "${ROT}$STACK: Download oder Entpacken fehlgeschlagen${NC}"
     return 1
@@ -117,10 +115,6 @@ sed -i 's/WebServerName/'$WebServerName'/g' docker-compose-wenom.yml ###
   echo -e "${GRUEN}OK: https://$SERVERNAME:$LPPort/${NC}"
 }
 
-if [ -z "$URL" ]; then
-  echo -e "${ROT}Aufruf: bash $0 <URL>   (ohne http://)${NC}"
-  exit 1
-fi
 if [ ! -f "$QUELLE" ]; then
   echo -e "${ROT}Datei $QUELLE nicht gefunden.${NC}"
   exit 1
